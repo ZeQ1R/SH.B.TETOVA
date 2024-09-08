@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+<style>
+* {
+            box-sizing: border-box;
+        }
+
+        body,html {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+        }
+
+/* Header/logo Title */
+.bg {
+  /* The image used */
+  background-image: url(images/6.jpg);
+
+  /* Full height */
+  height: 50%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+.main-image{
+  display: flex;
+  width: 100%;
+  background-color: #333;
+}
+
+.main-image img:hover{
+  transform: scale(1.1);
+}
+
+.main h2{
+  text-align: center;
+}
+
+.main p{
+  font-family: 'Georgia', serif;
+  font-size: 1.2rem;
+  line-height: 1;
+  color: #333;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 12px;
+  background-color: #f9f9f9;
+  border-left: 4px solid #e67e22;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.main p:hover{
+  background-color: #f0f0f0;
+
+}
+
+.main-image img{
+  width: 40%;
+  margin: 40px;
+  margin-left: 80px;
+  transition: transform 0.3s ease; /* Smooth transition when hovering */
+
+}
+
+
+/* .fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+} */
+
+
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size: 80px;
+  border: 10px solid #f1f1f1;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 400px;
+  padding: 20px;
+  text-align: center;
+}
+#footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+  display: flex;
+  width: 100%;
+  padding: 50px;
+
+}
+
+.footer-container {
+  flex-direction: column;
+  flex: 33.3%;
+}
+
+
+
+h2 {
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.contact {
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+  flex: 33.3%;
+}
+
+.contact-item {
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+
+.contact-item h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.contact-item p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.info{
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+
+.info p{
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.brand h1 {
+	font-size: 3rem;
+	text-transform: uppercase;
+	color: white;
+}
+.brand h1 span {
+	color: crimson;
+}
+
+@media screen and (max-width: 1200px) {
+  .brand h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .contact {
+    gap: 20px;
+  }
+
+  .contact-item {
+    flex: 1 1 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .main-image img{
+  width: 40%;
+  margin: 40px;
+  margin-left: 20px;
+}
+
+.gallery iframe{
+  max-width: 104%;
+  height: 100%;
+  margin-left: 5px;
+}
+#myBtn {
+    display: block; 
+  }
+}
+
+/* Media Queries for Responsive Layout */
+@media screen and (max-width: 768px) {
+  .brand h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .contact {
+    gap: 20px;
+  }
+
+  .contact-item {
+    flex: 1 1 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .main-image img{
+  width: 20%;
+  margin: 20px;
+  margin-left: 1px;
+}
+}
+
+@media screen and (max-width: 480px) {
+  .brand h1 {
+    font-size: 1.5rem;
+  }
+
+  .bg-text{
+    font-size: 30px;
+    width: 200px;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+
+  .contact {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .contact-item h3 {
+    font-size: 1.1rem;
+  }
+
+  .contact-item p {
+    font-size: 0.9rem;
+  }
+
+
+  .main-image img{
+  width: 40%;
+  margin: 40px;
+  margin-left: 10px;
+}
+
+
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+#more {
+  display: none;
+}
+
+
+#myBtn {
+  display: none; /* Hide the button by default on larger screens */
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+#myBtn:hover {
+  background-color: #005f75;
+}
+
+.gallery{
+  display: flex;
+
+}
+.gallery img{
+  width: 50%;
+  height: 50%;
+  margin: 5px;
+  transition: transform 0.3s ease; /* Smooth transition when hovering */
+}
+.gallery img:hover{
+  transform: scale(1.1); /* Scale the image by 10% when hovering */
+
+}
+.card {
+  display: flex;
+  height: 70px;
+  width: 270px; 
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+  flex: 33.3%;
+}
+
+.card svg {
+  position: absolute;
+  display: flex;
+  width: 60%;
+  height: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  opacity: 1;
+  transition: opacity 0.25s;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.card .social-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+  color: rgb(29, 17, 97);
+font-size: 20px;
+  text-decoration: none;
+  transition: 0.25s;
+  border-radius: 80px;
+}
+
+.card svg {
+  transform: scale(1);
+}
+
+.card .social-link:hover {
+  background-color: #1a74ce;
+  animation: bounce_613 0.4s linear;
+}
+
+
+@keyframes bounce_613 {
+  40% {
+    transform: scale(1.4);
+  }
+
+  60% {
+    transform: scale(0.8);
+  }
+
+  80% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+/* Style for the content */
+.content {
+  width: 80%;
+  margin: 20px auto;
+}
+
+/* Initially hide the 'more' content */
+#more {
+  display: none;
+}
+
+/* Style for the button */
+#toggleBtn {
+  background-color: #008CBA; /* Button color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+#toggleBtn:hover {
+  background-color: #005f75; /* Button hover color */
+}
+
+#more2 {
+  display: none;
+}
+
+/* Style for the button */
+#toggleBtn2 {
+  background-color: #008CBA; /* Button color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+#toggleBtn2:hover {
+  background-color: #005f75; /* Button hover color */
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="bg">
+  <div class="bg-text">SH.B TETOVA</div>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>Gallery</h2>
+    <h5>Photo:</h5>
+    <div class="gallery" >
+      <img src="images/1.jpg" >
+      <img src="images/2.jpg" >
+    </div>
+    <div class="gallery" >
+      <img src="images/Xholi.jpg" >
+      <img src="images/9.jpg" >
+    </div>
+    <div class="gallery" >
+      <img src="images/3.jpg" >
+      <img src="images/4.jpg" >
+    </div>
+    <div class="gallery" >
+      <img src="images/qendra.jpg">
+      <img src="images/Bogovina.jpg" >
+    </div>
+    
+    <h3>Our Connections</h3>
+    <div class="gallery" >
+      <img src="images/cnvp.jpg">
+      <img src="images/peaktrip.jpg" >
+    </div>
+    <div class="gallery">
+      <iframe width="520" height="420" src="https://www.youtube.com/embed/d1m5hFyuWFg" title="Придобивките од планинарењето" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    
+  </div>
+  <div class="main">
+    <h2>CNVP Sustainable Use of Nature in Northern Macedonia</h2>
+    <div class="main-image">
+      <img src="images/2.jpg" alt="">
+      <img src="images/5.jpg" alt="">
+    </div>
+    <p>As part of the visit organized by the office of CNVP Sustainable Use of Nature in Northern Macedonia, Shoqata Bjeshkatare Tetova from Tetovo had the honor of being a host of the Board of CNVP Foundation from the Netherlands, consisting of Mr. Maarten Bremer, z. Thijs Van Buren and Mrs Marianne Mayboom, accompanied by Mr. Nehat Ramadani CNVP Director - in Northern Macedonia, Mrs. Anila Karanxha Aliaj, CNVP Director for Albania and Mr. Xhevat Lushi, CNVP director for Kosovo.
+      We are grateful that despite the busy schedule, friends from the Netherlands managed to be our guests for a few hours and together we walked the last segment of the trail marked by the CNVP grant to promote mountaineering, as a recreational-sport activity for all ages and that from the stations of Shipkovica to Maja e Jellak!
+      <span id="dots">...</span>
+      <span id="more">
+        The main part of the trip from Hill of the Sun to the location cleared of fallen timber was realized with 4x4 cars of US members "TETOVA".
+      All the way through. the project coordinator Misa Hasipi informed the guests about the success of the project as well as the achievements and the impact that this project continues to have in the highlands of Sharr, mainly in the aspect of preserving biodiversity, promoting alternative tourism, as an economic potential for the residents of the highland villages. On our return from the summit of Jellak, we arranged a symbolic picnic with locally supplied products as a token of gratitude for the guests, and once again emphasized the importance of financial support of CNVP. We explained to the guests that picnic products are mainly purchased by local producers, in order to promote economic development of the family budget, which is in fact also one of the objectives of the CNVP grant implemented by the project "Sharri Cultural Heritage" implemented by the US “Tattoo”.
+      After finishing with the picnic and just before nightfall, with 4x4 cars we returned our guests safely to the hotel, on Hill of the Sun.
+      </span>
+      </p>
+      <button onclick="toggleText()" id="toggleBtn">Read more</button>
+    <br>
+    <h2>Mercator Mountain Association - from Ljubljana, Slovenia</h2>
+    <div class="main-image">
+      <img src="images/poland.jpg" alt="">
+      <img src="images/slovenia.jpg" alt="">
+    </div>
+    <p>This week we are leaving behind we had a busy schedule with activities at several locations.
+      A group of members and leadership of Shoqata Bjeshkatare Tetova welcomed and led the Mercator Mountain Association - from Ljubljana, Slovenia with great professionalism. This activity besides being very successful, it also had a great echo. The large group of Slovenian guests led by our association also drew the attention of Albanian Prime Minister Edi Rama.
+      The second group joins the US "Sharri" event from Prizren by climbing the Mount of Corfu from the Macedonia side to join the hosts at the summit.
+      The guests also shared their gratitude to our association, where we take the opportunity to thank them publicly.
+      <span id="dots2">...</span>
+      <span id="more2">
+        The third group consisting of about ten members participated in the celebration of the 6th anniversary of the founding of the Mountain Association "The Beauty of Evil" - Bogovina.
+      The walk took place from the New Village to Lake Bogovina.
+      We thank all the aforementioned hosts and guests for their continuous cooperation and interaction with our association. As we invite and encourage our current members and new members to join us for our upcoming activities. We feel that in this way we can contribute a little to raising awareness about caring for nature and our mental and physical health.
+      </span>
+      </p>
+      <button onclick="toggleText2()" id="toggleBtn2">Read more</button>
+</div>
+
+
+
+<section id="footer">
+  <div class="footer-container">
+    <div class="brand"><h1><span>SH</span>B <span>T</span>ETOVA</h1></div>
+    <h2>Your Company in everyday journeys</h2>
+  </div>  
+     <div class="contact">
+      <div class="contact-item">
+        <h3>Contacts</h3>
+        <p>1234 Main St, Your City, YR 12345</p>
+      </div>
+      <div class="contact-item">
+        <p>+123 456 7890</p>
+      </div>
+      <div class="contact-item">
+        <p>info@yourcompany.com</p>
+      </div>
+    </div>
+    <div class="card">
+      <a class="social-link">
+        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="#fff"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>
+      </a>
+      <h2>Page</h2>
+    </div>  
+    
+</section>
+<script>
+  function toggleText() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("toggleBtn");
+
+  if (moreText.style.display === "none") {
+    moreText.style.display = "inline";
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+  } else {
+    moreText.style.display = "none";
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+  }
+}
+function toggleText2() {
+  var dots = document.getElementById("dots2");
+  var moreText = document.getElementById("more2");
+  var btnText = document.getElementById("toggleBtn2");
+
+  if (moreText.style.display === "none") {
+    moreText.style.display = "inline";
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+  } else {
+    moreText.style.display = "none";
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+  }
+}
+
+
+  </script>
+  
+  
+</body>
+</html>

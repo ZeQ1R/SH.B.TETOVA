@@ -1,0 +1,110 @@
+
+
+body {
+    font-family: "Roboto", "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color: #19191d;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: #b3b3b3;
+    font-weight: 300;
+    margin: 10px;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Roboto", "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin: 10px;
+}
+
+.navbar {
+    background-color: #0c0c0c;
+    overflow: hidden;
+    position: relative;
+    padding: 10px;
+    height: 10vh;
+    width: 98.9%;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+hr {
+    width: 50%;
+    margin: auto;
+}
+
+.navbar, h1 {
+    color: whitesmoke;
+    text-align: center;
+}
+
+.content {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+table, th {
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+    padding: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    table, th {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 992px) {
+    table, th {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    table, th {
+        font-size: 12px;
+    }
+
+    p, h1, h2, h3, h4, h5, h6 {
+        margin: 5px;
+    }
+
+    hr {
+        width: 70%;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    table, th {
+        font-size: 11px;
+        padding: 10px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    hr {
+        width: 90%;
+    }
+}
