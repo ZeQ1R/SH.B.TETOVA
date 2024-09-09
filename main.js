@@ -7,19 +7,18 @@ function closeModal() {
   document.getElementById('locationModal').style.display = 'none';
 }
 
-window.addEventListener('scroll', function() {
-  var navbar = document.getElementById('navbar');
-  var scrollPercentage = (window.scrollY / document.body.scrollHeight) * 100;
+// window.addEventListener('scroll', function() {
+//   var navbar = document.getElementById('navbar');
+//   var scrollPercentage = (window.scrollY / document.body.scrollHeight) * 100;
 
-  // Check if scrolled more than 30% of the page
-  if (scrollPercentage > 19) {
-    navbar.classList.remove('transparent');
-    navbar.classList.add('scrolled');
-  } else {
-    navbar.classList.remove('scrolled');
-    navbar.classList.add('transparent');
-  }
-});
+//   if (scrollPercentage > 19) {
+//     navbar.classList.remove('transparent');
+//     navbar.classList.add('scrolled');
+//   } else {
+//     navbar.classList.remove('scrolled');
+//     navbar.classList.add('transparent');
+//   }
+// });
 
 // window.onload = function() {
 //   setTimeout(function() {
@@ -48,17 +47,17 @@ function ReadMore(){
   document.getElementsByClassName("class-more");
   window.open("peaks.html", '_blank');
 }
-
-function toggleMenu(){
-  const navbarRight = document.getElementById("navbar-right");
-  navbarRight.classList.toggle("active")
+// const toggleMenuOpen = () => document.body.classList.toggle("open");
+function toggleMenu() {
+  var navbar = document.getElementById("navbar");
+  navbar.classList.toggle("active");
 }
 
 
-
-
-
-
+// function toggleMenu(){
+//   const navbarRight = document.getElementById("navbar-right");
+//   navbarRight.classList.toggle("active")
+// }
 
 // let users = [];
 
@@ -99,32 +98,26 @@ function toggleMenu(){
 
 // }
 
-document.getElementById("signupForm").addEventListener('onclick',function(event){
-  event.preventDefault();
+// document.getElementById("signupForm").addEventListener('onclick',function(event){
+//   event.preventDefault();
 
-  const username = document.getElementById("name").value;
-  // const Lastname = document.getElementById("lastname").value;
+//   const username = document.getElementById("name").value;
   
-  const Email = document.getElementById("email").value;
-  // const Password = document.getElementById("pw").value;
-  
-  // const EMBG = document.getElementById("EMBG").value;
-  // const DOB = document.getElementById("DOB").value;
-  
-  // const DESTINATION = document.getElementById("Destination").value;
+//   const Email = document.getElementById("email").value;
 
-  const user = {username,Email};
 
-  let users = JSON.parse(localStorage.getItem('users')) || [];
-  users.push(user);
-  localStorage.setItem('users',JSON.stringify(users));
-  console.log(users);
+//   const user = {username,Email};
 
-  alert("User signed up successfully");
+//   let users = JSON.parse(localStorage.getItem('users')) || [];
+//   users.push(user);
+//   localStorage.setItem('users',JSON.stringify(users));
+//   console.log(users);
 
-  window.location.href = "admin.html";
-  window.open('admin.html','_blank')
-})
+//   alert("User signed up successfully");
+
+//   window.location.href = "admin.html";
+//   window.open('admin.html','_blank')
+// })
 
 
 function SignUp(){
@@ -132,19 +125,19 @@ function SignUp(){
 }
 
 
-function Admin(){
-  var LoginInfo = {};
-  var LoginName = $("#name").val();
-  var LoginPassword = $("#password").val();
-  var LoginNumber = $("#num").val();
+// function Admin(){
+//   var LoginInfo = {};
+//   var LoginName = $("#name").val();
+//   var LoginPassword = $("#password").val();
+//   var LoginNumber = $("#num").val();
 
-  LoginInfo.LoginName = LoginName;
-  LoginInfo.LoginPassword = LoginPassword;
-  LoginInfo.LoginNumber = LoginNumber
+//   LoginInfo.LoginName = LoginName;
+//   LoginInfo.LoginPassword = LoginPassword;
+//   LoginInfo.LoginNumber = LoginNumber
 
-  if(LoginPassword === "111" && LoginNumber === "0504"){
-    window.open("admin.html","_blank");
-  }else{
-    alert("please fill out the required information");
-  }
-}
+//   if(LoginPassword === "111" && LoginNumber === "0504"){
+//     window.open("admin.html","_blank");
+//   }else{
+//     alert("please fill out the required information");
+//   }
+// }

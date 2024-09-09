@@ -11,16 +11,16 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/peaks.css">
-    <link rel="stylesheet" href="../../assets/vendor/cubeportfolio/css/cubeportfolio.min.css">
-    <title>Peaks</title>
+    <link rel="stylesheet" href="prova.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    <title>Peaks</title>
 </head>
 <body>
 
-  <div id="navbar">
+  <!-- <div id="navbar">
     <a href="#default" id="logo">Shoqata Bjeshktare TETOVA</a>
     <div id="navbar-right">
       <a class="active" href="#hero">Home</a>
-      <a href="#layout">Explore</a>
+      <a class="active" href="#layout">Explore</a>
     </div>
     <div id="menu-icon" onclick="toggleMenu()">
       <i class="fa fa-bars"></i>
@@ -35,7 +35,39 @@
             <h1>Together</h1>
           </div>
         </div>
+      </section> -->
+      <section id="header">
+      
+        <div class="header container">
+          <div class="nav-bar">
+            <div class="brand">
+              <a href="#hero"><h1>Shoqata Bjeshkatare TETOVA</h1></a>
+            </div>
+            <div class="nav-list">
+              
+              <div class="hamburger" id="hamburger"><div class="bar"></div></div>
+              <ul id="nav-ul">
+                <li><a href="#hero" data-after="Home">Home</a></li>
+                <li><a href="#events" data-after="Service">Services</a></li>
+                <li><a href="#about" data-after="About">About</a></li>
+                <li><a href="#contact" data-after="Contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
       </section>
+      <!-- Hero Section  -->
+  <section id="hero" class="heroimg">
+    <div class="hero container">
+      <div>
+        <h1>Join us in <span></span></h1>
+        <h1>exploring the beauty<span></span></h1>
+        <h1>of the Mountains.<span></span></h1>
+        <!-- <a href="#projects" type="button" class="cta">Portfolio</a> -->
+      </div>
+    </div>
+  </section>
       
 
       <div class="buttons">
@@ -164,73 +196,54 @@
   </div>
 </div>
 <footer class="footer">
-  <div class="footer-container">
+  <div class="footer-container" data-aos="fade-down">
     <!-- Footer Logo -->
     <div class="footer-logo">
-      <div class="brand"  data-aos="fade-down"><h1><span>SH</span>B <span>T</span>ETOVA</h1></div>
-      <h2  data-aos="fade-down">Your Company in everyday journeys</h2>
+      <div class="brand"><h1><span>SH</span>B <span>T</span>ETOVA</h1></div>
+      <h2>Your Company in everyday journeys</h2>
     </div>
-
-    <!-- Footer Social Links -->
-    <div class="footer-social">
+     <!-- Footer Social Links -->
+     <div class="footer-social">
       <h3>Follow Us</h3>
-<ul class="wrapper">
-<li class="icon facebook">
-  <span class="tooltip">Facebook</span>
-  <svg
-    viewBox="0 0 320 512"
-    height="1.2em"
-    fill="currentColor"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
-    ></path>
-  </svg>
-</li>
-</ul>
-
-    </div>
-
+      <p style="color: whitesmoke;"> follow us on the social channels to stay tuned.</p>
+<a href="https://www.facebook.com/shbtetova"><ul class="wrapper">
+  <li class="icon facebook">
+    <span class="tooltip">Facebook</span>
+    <svg
+      viewBox="0 0 320 512"
+      height="1.2em"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+      ></path>
+    </svg>
+  </li>
+  </ul></a>
+</div>
     <!-- Footer Contact Info -->
     <div class="footer-contact">
       <h3>Contact Us</h3>
-      <p>Location: Tetova, North Macedonia</p>
-      <p>Phone: +389 70 123 456</p>
-      <p>Email: <a href="mailto:info@bjeshktaretetova.com">info@bjeshktaretetova.com</a></p>
+      <p>Location: <a href="https://www.google.com/maps?ll=42.007621,20.968931&z=16&t=m&hl=en&gl=US&mapclient=embed&q=Tetovo">Tetova, North Macedonia</a></p>
+      <p>Phone: 075 454 180</p>
+      <p>Email: <a href="mailto:shbtetova@outlook.com">shbtetova@outlook.com</a></p>
     </div>
   </div>
+
+   
+
+    
 
   <!-- Copyright Section -->
   <div class="footer-bottom">
     <p>&copy; 2024 Shoqata Bjeshktare TETOVA. All rights reserved.</p>
   </div>
 </footer>
-
-  <!-- <section id="footer">
-    <div class="footer-container" >
-      <div class="brand"  data-aos="fade-down"><h1><span>SH</span>B <span>T</span>ETOVA</h1></div>
-      <h2  data-aos="fade-down">Your Company in everyday journeys</h2>
-    </div>  
-      <div class="contact"  data-aos="fade-down">
-        <div class="contact-item">
-          <h3>Contacts</h3>
-          <p>1234 Main St, Your City, YR 12345</p>
-        </div>
-        <div class="contact-item">
-          <p>+123 456 7890</p>
-        </div>
-        <div class="contact-item">
-          <p>info@yourcompany.com</p>
-        </div>
-      </div>
-      <div class="card">
-        <a class="social-link">
-          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="#fff"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>
-        </a>
-      </div>  
-      
-  </section> -->
 <script src="peaks.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

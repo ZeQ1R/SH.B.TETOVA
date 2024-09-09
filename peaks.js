@@ -105,6 +105,15 @@
 //     }
 // })
 
+const hamburger = document.getElementById('hamburger');
+const navUl = document.getElementById('nav-ul');
+
+// Toggle 'active' class on click
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navUl.classList.toggle('active');
+});
+
 
 function filterCards(buttonId) {
 
@@ -136,26 +145,17 @@ for (const button of buttons) {
 }
 
 window.addEventListener('scroll', function() {
-  var navbar = document.getElementById('navbar');
-  var navbarright = this.document.getElementById("navbar-right");
+  var header = document.getElementById('header');
   var scrollPercentage = (window.scrollY / document.body.scrollHeight) * 100;
 
   if (scrollPercentage > 21) {
-    navbar.classList.remove('transparent');
-    navbar.classList.add('scrolled');
-    navbarright.classList.remove('transparent');
-    navbarright.classList.add('scrolled');
-
+    header.classList.remove('transparent');
+    header.classList.add('scrolled');
   } else {
-    navbar.classList.remove('scrolled');
-    navbar.classList.add('transparent');
-    navbarright.classList.remove('scrolled');
-    navbarright.classList.add('transparent');
+    header.classList.remove('scrolled');
+    header.classList.add('transparent');
   }
 });
-
-
-
 function toggleMenu(){
   const navbarRight = document.getElementById("navbar-right");
   navbarRight.classList.toggle("active")
