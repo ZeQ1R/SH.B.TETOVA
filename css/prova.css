@@ -34,7 +34,7 @@ img {
 }
 p {
 	color: black;
-	font-size: 1.8rem;
+	font-size: 1.4rem;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	margin-top: 5px;
 	line-height: 2.5rem;
@@ -214,7 +214,7 @@ p {
 /* End Header section */
 /* Hero Section */
 #hero {
-	background-image: url(images/6.jpg);
+	background-image: url(../images/Leshnica.jpeg);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -301,7 +301,7 @@ p {
 	padding: 16px 26px;
 	font-size: 16px;
 	border-radius: 40px; 
-  
+	cursor: pointer;
   }
 
 .cardd {
@@ -318,18 +318,16 @@ p {
   max-width: 650px;
   padding: 50px 30px;
   background: #121017;
-  border-radius: 24px;
   margin: 20px; 
   flex-direction: column;
   align-items: center;
 }
 
 .cardd img {
-  max-width: 280px;
+  /* max-width: 280px; */
   width: 100%;
   height: 300px;
   object-fit: cover;
-  border-radius: inherit;
   box-shadow: 0 60px 40px rgb(0 0 0 / 8%);
   margin-bottom: 20px;
 }
@@ -1182,3 +1180,36 @@ footer {
 	  stroke-dashoffset: 0;
 	}
   }
+
+  @media screen and (max-width: 600px) {
+	#contact .contact-items {
+		width: auto;
+	}
+	.card1, .card2{
+		padding: 25px 25px;
+		margin: 10px 0 15px 0;
+		width: 85vw;
+	}
+	#header{
+		padding-left: 15px;
+	}
+	#header .hamburger{
+		margin-right: auto;
+	}
+	.cardd img{
+		max-width: none;
+		border-radius: unset;
+	}
+	.cardd p {
+		margin-bottom: 0px;
+	}
+	.section-title{
+		margin: 20px 0 15px 0;
+		font-size: 3rem;
+	}
+	.wrapper{
+		padding-top: 0px;
+		height: 40px;
+	}
+  }
+	

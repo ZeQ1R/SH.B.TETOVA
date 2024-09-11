@@ -383,7 +383,7 @@ p {
 /* End Header section */
 /* Hero Section */
 #hero {
-	background-image: url(images/6.jpg);
+	background-image: url(../images/6.jpg);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
