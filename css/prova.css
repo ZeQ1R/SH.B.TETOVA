@@ -82,7 +82,7 @@ p {
 #myBtn {
 	display: none; /* Hidden by default */
 	position: fixed; /* Fixed/sticky position */
-	bottom: 20px; /* Place the button at the bottom of the page */
+	bottom: 10px; /* Place the button at the bottom of the page */
 	right: 30px; /* Place the button 30px from the right */
 	z-index: 99; /* Make sure it does not overlap */
 	border: none; /* Remove borders */
@@ -92,7 +92,7 @@ p {
 	cursor: pointer; /* Add a mouse pointer on hover */
 	padding: 15px; /* Some padding */
 	border-radius: 10px; /* Rounded corners */
-	font-size: 18px; /* Increase font size */
+	font-size: 14px; /* Increase font size */
   }
   
   #myBtn:hover {
@@ -550,12 +550,20 @@ footer {
   .footer-social i {
 	margin-right: 0.5rem;
   }
+
+  .footer-contact p{
+	color: whitesmoke;
+  }
   
   .footer-bottom {
 	border-top: 1px solid #444;
 	padding-top: 1rem;
 	margin-top: 1rem;
 	font-size: 0.9rem;
+  }
+
+  .footer-bottom p{
+	color: whitesmoke;
   }
   /*End Footer*/
   /*Btn-12*/
